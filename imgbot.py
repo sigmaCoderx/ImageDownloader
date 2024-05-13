@@ -10,8 +10,8 @@ from telebot.types import InlineKeyboardMarkup,InlineKeyboardButton
 bot = telebot.TeleBot(os.getenv('imgBotToken'))
 
 button = InlineKeyboardMarkup()
-group = InlineKeyboardButton(text='⚡️Our Group⚡️',url='t.me/developerschat')
-channel = InlineKeyboardButton(text='⚡️Our Channel⚡️',url='t.me/developerspage')
+group = InlineKeyboardButton(text='⚡️Our Group⚡️',url="t.me/neuralg")
+channel = InlineKeyboardButton(text='⚡️Our Channel⚡️',url="t.me/neuralp")
 button.add(group,channel)
 
 @bot.message_handler(commands=['start'])
